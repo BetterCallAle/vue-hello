@@ -11,10 +11,29 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
+
+    <header>
+        <h1>Inserisci il tuo nome e il Gabibbo ti saluterà</h1>
+    </header>
     
-    <div id="app">
-        <h1>{{prova}}</h1>
-    </div>
+    <main>
+        <div id="app">
+            <section class="form">
+                <div class="container">
+                    <label for="user-name">Inserisci il tuo nome</label>
+                    <input @keyup.enter="stampGreetings" type="text" id="user-name" v-model="userName">
+                    <button @click="stampGreetings">&#128073; Fatti salutare! &#x1F448;</button>
+                </div>
+            </section>
+    
+            <section>
+                <div class="container">
+                    <h2>{{ greetingsMessage }}</h2>
+                    <img v-bind:src="image" alt="">
+                </div>
+            </section>
+        </div>
+    </main>
 
     <!-- Link Js -->
     <script src="js/script.js"></script>
