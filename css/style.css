@@ -38,7 +38,7 @@ header{
     border-radius: 30px;
     border: none;
     border-bottom: 1px solid black;
-    padding: 0 1rem;
+    padding: .5rem 1rem;
 }
 
 .form input:focus{
