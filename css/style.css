@@ -14,3 +14,61 @@ header{
     justify-content: center;
     color: white;
 }
+
+/* MAIN */
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+/* form */
+.form{
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.form label{
+    display: block;
+    font-size: 1.3rem;
+}
+
+.form input{
+    margin: 1rem auto;
+    width: 60%;
+    display: block;
+    border-radius: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 1rem;
+}
+
+.form input:focus{
+    border: none;
+}
+
+.form button{
+    padding: .7rem;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 30px;
+    color: red;
+    font-size: 1rem;
+    transition: all 125ms linear;
+}
+
+.form button:hover{
+    background-color: wheat;
+    color: blue;
+    border: 1px solid blue;
+}
+
+/* Output */
+#output{
+    text-align: center;
+}
+
+img{
+    width: 50%;
+    object-fit: fill;
+    margin: 1rem 0;
+    border-radius: 10px;
+}

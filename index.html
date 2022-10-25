@@ -21,12 +21,12 @@
             <section class="form">
                 <div class="container">
                     <label for="user-name">Inserisci il tuo nome</label>
-                    <input @keyup.enter="stampGreetings" type="text" id="user-name" v-model="userName">
+                    <input @keyup.enter="stampGreetings" type="text" id="user-name" v-model="userName" placeholder="Inserisci il tuo nome qui">
                     <button @click="stampGreetings">&#128073; Fatti salutare! &#x1F448;</button>
                 </div>
             </section>
     
-            <section>
+            <section id="output">
                 <div class="container">
                     <h2>{{ greetingsMessage }}</h2>
                     <img v-bind:src="image" alt="">
